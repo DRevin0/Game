@@ -8,7 +8,7 @@
 
 Взаимодействие с игрой осуществляется как с помощью клавиш клавиатуры (стрелки и пробел), так и через интерфейсные кнопки.  
 
-На данный момент реализована только одна локация — арена для битвы со скелетом. В игре можно нанести три прыжка по скелету, после чего он умирает; один удар по скелету наносит 30 HP.  
+На данный момент реализована только одна локация — арена для битвы со скелетом. В игре можно нанести три прыжка по скелету, после чего он умирает; один удар скелета наносит 30 HP.  
 
 Я решил завершить этот проект и начать работу над новым, более продуманным проектом, учитывая все ошибки и пути их решения, которые я выявил во время разработки.
 
@@ -23,6 +23,6 @@ All assets used in the project are free, except for the skeleton attack animatio
 
 Interaction with the game is through keyboard controls (arrow keys and space) as well as interface buttons.
 
-Currently, only one location is implemented — an arena for battling a skeleton. In the game, you can perform three jumps on the skeleton before it dies; a single hit deals 30 HP damage.
+Currently, only one location is implemented — an arena for battling a skeleton. In the game, you can perform three jumps on the skeleton before it dies; a skeleton hit -30Hp.
 
 I decided to finish this project and start working on a new one, taking into account all the issues and solutions I discovered during development.
