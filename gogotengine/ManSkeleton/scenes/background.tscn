@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://dkamif37fax64"]
+
+[ext_resource type="Texture2D" uid="uid://bkawvk25lvcfq" path="res://assets/HouseGrandmother/1.png" id="1_bkp1e"]
+[ext_resource type="Texture2D" uid="uid://b72xnq38y46r6" path="res://assets/Mount/2.png" id="2_wax1t"]
+[ext_resource type="Texture2D" uid="uid://dis1ke14qsqd1" path="res://assets/HouseGrandmother/3.png" id="3_jougr"]
+[ext_resource type="Texture2D" uid="uid://nw41ywelvr6y" path="res://assets/Plain/3.png" id="4_1tmhi"]
+[ext_resource type="Texture2D" uid="uid://dc4r6hhl4pa8b" path="res://assets/HouseGrandmother/4.png" id="4_cbsqf"]
+
+[node name="BG" type="ParallaxBackground"]
+
+[node name="Sky" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.2, 1)
+
+[node name="1" type="Sprite2D" parent="Sky"]
+position = Vector2(320.25, 179.5)
+scale = Vector2(1.11024, 1.10802)
+texture = ExtResource("1_bkp1e")
+
+[node name="2" type="Sprite2D" parent="Sky"]
+position = Vector2(995, 178.555)
+scale = Vector2(1.23264, 1.10151)
+texture = ExtResource("1_bkp1e")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 1)
+
+[node name="2" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(320, 183)
+scale = Vector2(1.11111, 1.0679)
+texture = ExtResource("2_wax1t")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.8, 1)
+
+[node name="5" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(290, 111)
+texture = ExtResource("4_1tmhi")
+
+[node name="6" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(551, 109)
+texture = ExtResource("4_1tmhi")
+
+[node name="7" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(721, 108)
+scale = Vector2(0.847222, 1)
+texture = ExtResource("4_1tmhi")
+region_rect = Rect2(100, 0, 1000, 100)
+
+[node name="8" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(808, 186)
+texture = ExtResource("3_jougr")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+
+[node name="4" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(333, 178)
+scale = Vector2(1.11024, 1.02469)
+texture = ExtResource("4_cbsqf")

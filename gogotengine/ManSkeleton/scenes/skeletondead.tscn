@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://b2kgyppulrb1e"]
+
+[ext_resource type="Texture2D" uid="uid://bxfgbldve4t1" path="res://assets/Character/Skeleton/skeleton.png" id="1_iqx21"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j846f"]
+height = 20.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrphn"]
+atlas = ExtResource("1_iqx21")
+region = Rect2(96, 320, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_owq1g"]
+atlas = ExtResource("1_iqx21")
+region = Rect2(64, 320, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v20ff"]
+atlas = ExtResource("1_iqx21")
+region = Rect2(64, 288, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r678q"]
+atlas = ExtResource("1_iqx21")
+region = Rect2(64, 352, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nv6km"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lrphn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_owq1g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v20ff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r678q")
+}],
+"loop": false,
+"name": &"dead",
+"speed": 3.0
+}]
+
+[node name="skeletondead" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 16)
+shape = SubResource("CapsuleShape2D_j846f")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, 9)
+scale = Vector2(2.28125, 1.9869)
+sprite_frames = SubResource("SpriteFrames_nv6km")
+animation = &"dead"
+autoplay = "dead"

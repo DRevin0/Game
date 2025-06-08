@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://dt0qheeixn6u7"]
+
+[ext_resource type="Script" uid="uid://dw76rllsd2ovp" path="res://scripts/information.gd" id="1_7dbpe"]
+[ext_resource type="PackedScene" uid="uid://c1yip71tnrh64" path="res://scenes/main_menu_back.tscn" id="1_vuxuq"]
+
+[node name="Information" type="Node2D"]
+script = ExtResource("1_7dbpe")
+
+[node name="MainMenuBack" parent="." instance=ExtResource("1_vuxuq")]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 39.0
+offset_top = 198.0
+offset_right = 433.0
+offset_bottom = 351.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.811765)
+text = "This is my first game development
+experience using Godot Engine! 🎮✨
+I'm learning how to create gameplay mechanics,
+ implement character movement, and add simple
+ interactions. "
+
+[node name="Back" type="Button" parent="."]
+offset_left = 492.0
+offset_top = 252.0
+offset_right = 579.0
+offset_bottom = 299.0
+text = "Back"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
